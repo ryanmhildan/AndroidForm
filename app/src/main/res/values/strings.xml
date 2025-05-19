@@ -1,0 +1,69 @@
+<resources>
+    <string name="app_name">AndroidForm</string>
+
+    <string name="title_app">Formulir Pemrograman Android</string>
+
+    <string name="title_app_result">Anda Telah Berhasil Terdaftar</string>
+
+    <string name="nim">NIM</string>
+    <string name="nim_hint">Masukkan NIM Anda</string>
+
+    <string name="nama">Nama</string>
+    <string name="nama_hint">Masukkan Nama Lengkap</string>
+
+    <string name="semester">Semester</string>
+
+    <string name="rad_device">Device</string>
+    <string name="rad_pc">PC Desktop</string>
+    <string name="rad_laptop">Laptop</string>
+    <string name="rad_tidak">Tidak Punya</string>
+
+    <string name="rad_os_device">OS Device</string>
+    <string name="rad_windows">Windows</string>
+    <string name="rad_macos">MacOs</string>
+    <string name="rad_linux">Linux</string>
+
+    <string name="versi_os">Versi OS</string>
+
+    <string name="ram">Ram</string>
+    <string name="ram_hint">Masukkan Jumlah Ram (GB)</string>
+
+    <string name="cpu">CPU</string>
+    <string name="cpu_hint">Masukkan Jenis CPU</string>
+
+    <string name="deployment">Deployment</string>
+
+    <string name="merk_hp">Merk HP</string>
+
+    <string name="os_hp">OS HP</string>
+    <string name="os_hp_hint">Masukkan OS HP Anda</string>
+
+    <string name="ukuran_hp">Ukuran HP</string>
+    <string name="ukuran_hp_hint">Masukkan Ukuran HP (Inch)</string>
+
+    <string name="rad_internet">Internet</string>
+    <string name="rad_wifi">WiFi</string>
+    <string name="rad_wifi_nebeng">WiFi Nebeng</string>
+    <string name="rad_mobile_data">Mobile Data</string>
+
+    <string name="rad_install">Sudah Install Android Studio?</string>
+    <string name="rad_sudah">Sudah</string>
+    <string name="rad_belum">Belum</string>
+
+    <string name="versi">Versi Android Studio</string>
+    <string name="versi_hint">Masukkan Versi Android Studio</string>
+
+    <string name="submit">Submit</string>
+
+    <string name="info_developer">Info Pengembang</string>
+    <string name="created_by">Created By : </string>
+    <string name="nama_pengembang">Ryan Muhammad Hildan</string>
+    <string name="email_dev">Email : </string>
+    <string name="email_pengembang">ryanmhildan@gmail.com</string>
+    <string name="nim_pengembang">10122475</string>
+    <string name="kelas_pengembang">PA-4</string>
+    <string name="github">GitHub : </string>
+    <string name="github_pengembang">https://github.com/ryanmhildan</string>
+
+
+</resources>

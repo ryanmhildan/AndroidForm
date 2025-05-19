@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape xmlns:android="http://schemas.android.com/apk/res/android">
+    <solid android:color="#FFFFFF" /> <!-- Warna isi (putih) -->
+    <stroke
+        android:width="2dp"
+        android:color="#207198" /> <!-- Warna garis tepi -->
+    <corners android:radius="6dp" /> <!-- Sudut membulat -->
+    <padding
+        android:left="10dp"
+        android:top="8dp"
+        android:right="10dp"
+        android:bottom="8dp" />
+</shape>

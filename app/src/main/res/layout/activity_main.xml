@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@color/white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <!-- JUDUL -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/title_app"
+            android:textColor="#0E4A67"
+            android:gravity="center"
+            android:textSize="25sp"
+            android:textStyle="bold"/>
+
+        <!-- Divider -->
+        <View android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#CCCCCC"
+            android:layout_marginBottom="20dp" />
+
+        <!-- DATA MAHASISWA -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="@string/nim"
+            android:textColor="#207198"/>
+
+        <EditText
+            android:id="@+id/edt_nim"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_stroke"
+            android:layout_marginBottom="10dp"
+            android:inputType="text"
+            android:hint="@string/nim_hint"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="@string/nama"
+            android:textColor="#207198"/>
+
+        <EditText
+            android:id="@+id/edt_nama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_stroke"
+            android:layout_marginBottom="10dp"
+            android:inputType="text"
+            android:hint="@string/nama_hint"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="@string/semester"
+            android:textColor="#207198"/>
+
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/spSemester"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:paddingEnd="36dp"
+            android:background="@drawable/spinner_stroke"
+            android:spinnerMode="dropdown"
+            android:theme="@style/ThemeOverlay.AppCompat.Light" />
+
+        <!-- Divider -->
+        <View android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#CCCCCC"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp" />
+
+        <!-- Device -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="@string/rad_device"
+            android:textColor="#207198"/>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rad_pc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:text="@string/rad_pc"/>
+
+            <RadioButton
+                android:id="@+id/rad_laptop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:text="@string/rad_laptop"/>
+
+            <RadioButton
+                android:id="@+id/rad_tidak"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/rad_tidak"/>
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="@string/rad_os_device"
+            android:textColor="#207198"/>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rad_windows"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:text="@string/rad_windows"/>
+
+            <RadioButton
+                android:id="@+id/rad_macos"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:text="@string/rad_macos"/>
+
+            <RadioButton
+                android:id="@+id/rad_linux"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/rad_linux"/>
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="@string/versi_os"
+            android:textColor="#207198"/>
+
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/spVersiOs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/spinner_stroke"
+            android:spinnerMode="dropdown"
+            android:theme="@style/ThemeOverlay.AppCompat.Light"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="@string/ram"
+            android:textColor="#207198"/>
+
+        <EditText
+            android:id="@+id/edt_ram"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_stroke"
+            android:layout_marginBottom="10dp"
+            android:inputType="number"
+            android:hint="@string/ram_hint"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="@string/cpu"
+            android:textColor="#207198"/>
+
+        <EditText
+            android:id="@+id/edt_cpu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_stroke"
+            android:layout_marginBottom="10dp"
+            android:inputType="text"
+            android:hint="@string/cpu_hint"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="@string/deployment"
+            android:textColor="#207198"/>
+
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/spDeployment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/spinner_stroke"
+            android:spinnerMode="dropdown"
+            android:theme="@style/ThemeOverlay.AppCompat.Light"
+            android:layout_marginBottom="10dp"/>
+
+        <!-- Divider -->
+        <View android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#CCCCCC"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp" />
+
+        <!-- HP-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="@string/merk_hp"
+            android:textColor="#207198"/>
+
+        <androidx.appcompat.widget.AppCompatSpinner
+            android:id="@+id/spMerkHp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/spinner_stroke"
+            android:spinnerMode="dropdown"
+            android:theme="@style/ThemeOverlay.AppCompat.Light"
+            android:layout_marginBottom="10dp"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="@string/os_hp"
+            android:textColor="#207198"/>
+
+        <EditText
+            android:id="@+id/edt_os_hp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_stroke"
+            android:layout_marginBottom="10dp"
+            android:inputType="text"
+            android:hint="@string/os_hp_hint"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="@string/ukuran_hp"
+            android:textColor="#207198"/>
+
+        <EditText
+            android:id="@+id/edt_ukuran_hp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_stroke"
+            android:layout_marginBottom="10dp"
+            android:inputType="numberDecimal"
+            android:hint="@string/ukuran_hp_hint"/>
+
+        <!-- Divider -->
+        <View android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#CCCCCC"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp" />
+
+        <!-- Internet-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="@string/rad_internet"
+            android:textColor="#207198"/>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rad_wifi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:text="@string/rad_wifi"/>
+
+            <RadioButton
+                android:id="@+id/rad_wifi_nebeng"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:text="@string/rad_wifi_nebeng"/>
+
+            <RadioButton
+                android:id="@+id/rad_mobile_data"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/rad_mobile_data"/>
+        </RadioGroup>
+
+        <!-- Divider -->
+        <View android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#CCCCCC"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="@string/rad_install"
+            android:textColor="#207198"/>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rad_sudah"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="10dp"
+                android:text="@string/rad_sudah"/>
+
+            <RadioButton
+                android:id="@+id/rad_belum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/rad_belum"/>
+
+        </RadioGroup>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="@string/versi"
+            android:textColor="#207198"
+            />
+
+        <EditText
+            android:id="@+id/edt_versi"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/edittext_stroke"
+            android:layout_marginBottom="25dp"
+            android:inputType="text"
+            android:hint="@string/versi_hint"/>
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btn_submit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/submit"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:background="@drawable/button_bg"
+            android:backgroundTint="@null"
+            android:layout_marginBottom="50dp"/>
+
+    </LinearLayout>
+
+
+
+</ScrollView>
